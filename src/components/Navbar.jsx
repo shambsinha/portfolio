@@ -218,7 +218,6 @@ export default function Navbar() {
                   fontFamily: "'Inter', sans-serif",
                 }}
               >
-                <span style={{ color: '#06b6d4', fontFamily: 'monospace', marginRight: '8px' }}>0{i + 1}.</span>
                 {link.label}
               </motion.a>
             ))}

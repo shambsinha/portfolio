@@ -290,6 +290,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
+        className="scroll-indicator"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
         style={{
@@ -334,6 +335,37 @@ export default function Hero() {
           ))}
         </div>
       </motion.div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .scroll-indicator {
+            position: relative !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            transform: none !important;
+            margin: 3rem auto 2rem auto !important;
+            order: 3;
+            width: fit-content;
+            display: flex !important;
+          }
+          #home {
+            height: auto !important;
+            min-height: 100vh !important;
+            padding-bottom: 3rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+          }
+          #home > div:first-of-type {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 2rem !important;
+            text-align: center !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
