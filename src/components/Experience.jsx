@@ -25,7 +25,7 @@ const experiences = [
       'Participated in agile sprints and code reviews, contributing to zero-downtime deployment goals',
     ],
     tags: ['Java', 'Spring Boot', 'Kafka', 'MariaDB', 'Docker', 'AWS', 'Microservices'],
-    credentialLink: 'https://drive.google.com/file/d/1LhOR0O2ZEllydhA09Z8sLjwV3xZGLSc4/view?usp=drive_link',
+    credentialLink: 'https://drive.google.com/file/d/1CKWLKrxJ3ojLtNNIbHWIUVh-s26zilZA/view?usp=drive_link',
   },
   {
     id: 2,
