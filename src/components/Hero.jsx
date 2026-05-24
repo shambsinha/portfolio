@@ -218,7 +218,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
+            style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}
           >
             <motion.button
               whileHover={{ scale: 1.04, boxShadow: '0 0 30px rgba(6,182,212,0.4)' }}
@@ -260,6 +260,37 @@ export default function Hero() {
             >
               Contact Me
             </motion.button>
+            <motion.a
+              href="https://drive.google.com/file/d/1LbTa1UFVQuS8LUZUXvhLBf5D1dWJEL5e/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.04, borderColor: 'rgba(139, 92, 246, 0.6)', backgroundColor: 'rgba(139, 92, 246, 0.1)' }}
+              whileTap={{ scale: 0.97 }}
+              style={{
+                padding: '14px 24px',
+                borderRadius: '10px',
+                background: 'rgba(139, 92, 246, 0.05)',
+                border: '1px solid rgba(139, 92, 246, 0.3)',
+                color: '#8b5cf6',
+                fontSize: '0.95rem',
+                fontWeight: 600,
+                fontFamily: "'Inter', sans-serif",
+                cursor: 'pointer',
+                letterSpacing: '0.03em',
+                transition: 'all 0.3s ease',
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Resume
+            </motion.a>
           </motion.div>
         </div>
 
