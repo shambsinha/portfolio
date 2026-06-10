@@ -4,26 +4,27 @@ import { motion, useInView } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    name: 'Tripzy',
-    tagline: 'Hotel & Flight Booking Platform',
+    name: 'RoboLearn',
+    tagline: 'AI-Powered Learning Platform',
     description:
-      'A full-stack travel booking application enabling users to search, compare, and book flights and hotels. Features real-time seat availability, dynamic pricing engine, and a microservice-based reservation workflow with distributed transaction management.',
-    tech: ['Java', 'Spring Boot', 'React', 'MySQL', 'Spring Cloud', 'REST APIs', 'JWT Auth'],
+      'An end-to-end AI learning platform featuring an interactive coding arena. Architected with a scalable Spring Boot backend, an async execution engine, and optimized multi-database storage for rapid query evaluation.',
+    tech: ['Spring Boot', 'React', 'Three.js', 'PostgreSQL', 'MongoDB', 'AI Integration'],
     color: '#06b6d4',
     gradientFrom: 'rgba(6,182,212,0.15)',
     gradientTo: 'rgba(59,130,246,0.05)',
-    icon: '✈️',
-    features: ['Real-time inventory sync', 'Distributed booking flow', 'Payment gateway integration', 'Multi-city search'],
+    icon: '🤖',
+    features: ['Interactive coding arena', 'Async execution engine', 'Distinct Admin/User interfaces', 'Three.js 3D UI'],
     github: 'https://github.com/shambsinha',
-    live: null,
-    badge: 'Full Stack',
+    live: 'https://robo--learn.vercel.app',
+    date: 'Jan 2026',
+    badge: 'AI & Full Stack',
   },
   {
     id: 2,
     name: 'Quantfit',
     tagline: 'AI-Powered Fitness Tracker',
     description:
-      'A real-time fitness tracking application that leverages the MediaPipe ML library for computer vision-based exercise rep counting. Uses pose estimation to detect body landmarks and accurately count repetitions for various exercises without wearables.',
+      'A real-time fitness tracker leveraging MediaPipe ML for computer vision-based rep counting. Uses pose estimation to accurately detect body landmarks and track exercises without wearables.',
     tech: ['Python', 'MediaPipe', 'React', 'OpenCV', 'TensorFlow Lite', 'FastAPI', 'WebSockets'],
     color: '#8b5cf6',
     gradientFrom: 'rgba(139,92,246,0.15)',
@@ -39,7 +40,7 @@ const projects = [
     name: 'SkillLink',
     tagline: 'Service Provider Web Application',
     description:
-      'Developed a full-stack task management web application integrating MongoDB for efficient data storage and retrieval. Implemented secure OTP-based authentication using NodeMailer to enhance user verification and security — enabling a trusted service-provider marketplace.',
+      'A full-stack task management platform and service-provider marketplace. Features efficient MongoDB data storage and secure OTP-based authentication via NodeMailer for enhanced user verification.',
     tech: ['JavaScript', 'EJS', 'CSS', 'NodeMailer', 'MongoDB', 'Node.js', 'Express'],
     color: '#10b981',
     gradientFrom: 'rgba(16,185,129,0.15)',
@@ -102,6 +103,9 @@ function TiltCard({ project }) {
           overflow: 'hidden',
           transformStyle: 'preserve-3d',
           cursor: 'default',
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100%',
         }}
       >
         {/* Dynamic mouse glow */}
@@ -165,8 +169,8 @@ function TiltCard({ project }) {
           }}>{project.description}</p>
         </div>
 
-        {/* Features */}
-        <div style={{ padding: '0 2rem 1.5rem', position: 'relative', zIndex: 1 }}>
+        {/* Features & Action Area */}
+        <div style={{ padding: '0 2rem 1.5rem', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', flex: 1 }}>
           <div style={{
             height: '1px',
             background: `linear-gradient(90deg, ${project.color}33, transparent)`,
@@ -212,7 +216,7 @@ function TiltCard({ project }) {
           </div>
 
           {/* Action buttons */}
-          <div style={{ display: 'flex', gap: '1rem' }}>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
             <motion.a
               href={project.github}
               target="_blank"

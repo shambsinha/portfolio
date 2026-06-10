@@ -261,7 +261,7 @@ export default function Hero() {
               Contact Me
             </motion.button>
             <motion.a
-              href="https://drive.google.com/file/d/1LbTa1UFVQuS8LUZUXvhLBf5D1dWJEL5e/view?usp=sharing"
+              href="https://drive.google.com/file/d/1SkG2vcYiZ67trPe0IZ4HcFkr_Yzp6Qik/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04, borderColor: 'rgba(139, 92, 246, 0.6)', backgroundColor: 'rgba(139, 92, 246, 0.1)' }}
