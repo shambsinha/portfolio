@@ -5,8 +5,8 @@ const experiences = [
   {
     id: 1,
     role: 'Software Engineer Associate',
-    company: 'PeopleHum Technologies',
-    period: 'Jan 2026 – Apr 2026',
+    company: 'PeopleHum Technologies Pvt. Ltd.',
+    period: 'Jan 2026 – May 2026',
     location: 'Mumbai, Maharashtra',
     type: 'Internship',
     color: '#06b6d4',

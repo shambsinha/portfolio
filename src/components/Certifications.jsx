@@ -3,6 +3,19 @@ import { motion, useInView } from 'framer-motion';
 
 const certificationData = [
   {
+    name: 'Oracle Agentic AI Certified Foundations Associate',
+    issuer: 'Oracle',
+    date: 'July 2026',
+    link: 'https://drive.google.com/file/d/1Yjj5w91AyQuptm6ihFMRHcheOYxkD3Sx/view?usp=sharing',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9.3 6.2 11 2l1.7 4.2c.4 1 .9 1.5 1.9 1.9L19 10l-4.4 1.9c-1 .4-1.5.9-1.9 1.9L11 18l-1.7-4.2c-.4-1-.9-1.5-1.9-1.9L3 10l4.4-1.9c1-.4 1.5-.9 1.9-1.9Z" />
+        <path d="m14 17 1-2 2-1-2-1-1-2-1 2-2 1 2 1 1 2Z" />
+      </svg>
+    ),
+    color: '#f59e0b',
+  },
+  {
     name: 'Oracle Cloud Infrastructure 2025 Certified Developer Professional',
     issuer: 'Oracle',
     date: 'October 2025',
